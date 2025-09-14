@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+:root {
+    --header-height: 8rem;
+}
+
 @theme inline {
     --font-montserrat: var(--font-montserrat);
     --font-roboto: var(--font-roboto);
