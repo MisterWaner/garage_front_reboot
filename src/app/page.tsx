@@ -16,7 +16,7 @@ export default function Home() {
                     <h2 className='text-2xl font-semibold font-montserrat mb-4'>
                         Découvrez notre{' '}
                         <span className='underline underline-offset-4 decoration-red-500'>
-                            univers.
+                            Univers.
                         </span>
                     </h2>
 
@@ -97,7 +97,7 @@ export default function Home() {
                             pratiques de l&apos;industrie.
                         </p>
                     </section>
-                    <section className='my-10 flex flex-col md:flex-row-reverse items-center md:items-stretch font-roboto'>
+                    <section className='my-10 flex flex-col gap-4 md:flex-row-reverse items-center md:items-stretch font-roboto'>
                         <Image
                             src={route}
                             alt='une route'
@@ -120,9 +120,9 @@ export default function Home() {
                 </article>
                 <article>
                     <h2 className='text-2xl font-semibold font-montserrat mb-4'>
-                        Votre
+                        Votre{' '}
                         <span className='underline underline-offset-4 decoration-red-500'>
-                            Satisfaction{' '}
+                            Satisfaction
                         </span>
                         , notre Priorité.
                     </h2>
@@ -130,9 +130,9 @@ export default function Home() {
                         <p className='text-lg'>
                             Chez Garage Vincent Parrot, votre satisfaction est
                             notre boussole. Nous comprenons à quel point votre
-                            véhicule est important pour vous, c&apos;est pourquoi
-                            nous nous efforçons de dépasser vos attentes à
-                            chaque visite. <br />
+                            véhicule est important pour vous, c&apos;est
+                            pourquoi nous nous efforçons de dépasser vos
+                            attentes à chaque visite. <br />
                             Notre approche personnalisée signifie que nous
                             prenons le temps de vous écouter, de comprendre vos
                             besoins et de vous conseiller sur les meilleures
