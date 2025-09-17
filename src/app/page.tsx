@@ -141,6 +141,33 @@ export default function Home() {
                     </section>
                     <ReviewSection />
                 </article>
+                <article>
+                    <h2 className='text-2xl font-semibold font-montserrat mb-4'>
+                        Contactez-nous
+                    </h2>
+                    <section className='font-roboto'>
+                        <p className='text-lg'>
+                            Que vous soyez un passionné de voitures classiques,
+                            un conducteur au quotidien ou simplement à la
+                            recherche d&apos;un service de qualité pour votre
+                            véhicule,{' '}
+                            <span className='font-bold underline underline-offset-4 decoration-red-500'>
+                                Garage Vincent Parrot
+                            </span>{' '}
+                            est là pour vous. <br />
+                            Venez découvrir nos services de mécanique et de
+                            carrosserie de classe mondiale et prenez le contrôle
+                            de votre expérience automobile. <br />
+                        </p>
+                        <p className='text-lg mt-8'>
+                            Merci de nous faire confiance pour prendre soin de
+                            votre précieux moyen de transport. Chez nous
+                            l&apos;automobile est bien plus qu&apos;un métier,
+                            c&apos;est une passion que nous partageons avec
+                            vous.
+                        </p>
+                    </section>
+                </article>
             </MainWrapper>
         </>
     );
