@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import MainWrapper from '@/components/ui/MainWrapper';
+import PageTitle from '@/components/ui/Headings/PageTitle';
+import SectionTitle from '@/components/ui/Headings/SectionTitle';
 import AnimatedArticle from '@/components/Animated/AnimatedArticle';
 import carrosserie from '@/assets/images/carrosserie.jpg';
 import imageSlider3 from '@/assets/images/image_slider3.jpg';
@@ -9,17 +11,15 @@ import nissan from '@/assets/images/nissan_gtr_nismo_2022.jpg';
 export default function page() {
     return (
         <MainWrapper centered={false}>
-            <h1 className='text-center text-2xl my-6 sm:text-3xl lg:text-5xl font-montserrat underline underline-offset-4 decoration-red-500'>
-                Carrosserie
-            </h1>
+            <PageTitle>Carrosserie</PageTitle>
             <AnimatedArticle>
-                <h2 className='text-2xl font-montserrat font-bold mb-4'>
+                <SectionTitle>
                     Notre{' '}
                     <span className='underline underline-offset-4 decoration-red-500'>
                         Expertise
                     </span>{' '}
                     en Carrosserie
-                </h2>
+                </SectionTitle>
                 <section className='flex flex-col gap-4 md:flex-row items-center md:items-stretch font-roboto'>
                     <Image
                         src={carrosserie}
@@ -42,9 +42,9 @@ export default function page() {
             </AnimatedArticle>
 
             <AnimatedArticle>
-                <h2 className='underline underline-offset-4 decoration-red-500 text-2xl font-montserrat font-bold mb-4'>
+                <SectionTitle className='underline underline-offset-4 decoration-red-500 '>
                     Qualité et Engagement.
-                </h2>
+                </SectionTitle>
                 <section className='flex flex-col gap-4 md:flex-row-reverse items-center md:items-stretch font-roboto'>
                     <Image
                         src={imageSlider3}
@@ -65,9 +65,9 @@ export default function page() {
             </AnimatedArticle>
 
             <AnimatedArticle>
-                <h2 className='underline underline-offset-4 decoration-red-500 text-2xl font-bold font-montserrat mb-4'>
+                <SectionTitle className='underline underline-offset-4 decoration-red-500'>
                     Service Personnalisé.
-                </h2>
+                </SectionTitle>
                 <section className='flex flex-col gap-4 md:flex-row items-center md:items-stretch font-roboto'>
                     <Image
                         src={carCustomized}
@@ -89,9 +89,9 @@ export default function page() {
             </AnimatedArticle>
 
             <AnimatedArticle>
-                <h2 className='underline underline-offset-4 decoration-red-500 text-2xl font-bold font-montserrat mb-4'>
+                <SectionTitle className='underline underline-offset-4 decoration-red-500'>
                     Nous Contacter
-                </h2>
+                </SectionTitle>
                 <section className='flex flex-col gap-4 md:flex-row-reverse items-center md:items-stretch font-roboto'>
                     <Image
                         src={nissan}
@@ -104,7 +104,7 @@ export default function page() {
                         N&apos;hésitez pas à nous{' '}
                         <a
                             href='/contact'
-                            className='underline underline-offset-4 decoration-red-500'
+                            className='underline underline-offset-4 decoration-red-500 font-semibold'
                         >
                             contacter
                         </a>{' '}

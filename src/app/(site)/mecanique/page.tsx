@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import MainWrapper from '@/components/ui/MainWrapper';
+import PageTitle from '@/components/ui/Headings/PageTitle';
+import SectionTitle from '@/components/ui/Headings/SectionTitle';
 import AnimatedArticle from '@/components/Animated/AnimatedArticle';
 import mecanique from '@/assets/images/mecanique.jpg';
 import frein from '@/assets/images/frein.jpg';
@@ -9,17 +11,15 @@ import imageSlider2 from '@/assets/images/image_slider2.jpg';
 export default function page() {
     return (
         <MainWrapper centered={false}>
-            <h1 className='text-center text-2xl my-6 sm:text-3xl lg:text-5xl font-montserrat underline underline-offset-4 decoration-red-500'>
-                Mécanique
-            </h1>
+            <PageTitle>Mécanique</PageTitle>
             <AnimatedArticle>
-                <h2 className='text-2xl font-bold font-montserrat mb-4'>
+                <SectionTitle>
                     Notre{' '}
                     <span className='underline underline-offset-4 decoration-red-500'>
                         Expertise
                     </span>{' '}
                     Mécanique
-                </h2>
+                </SectionTitle>
                 <section className='flex flex-col gap-4 md:flex-row items-center md:items-stretch font-roboto'>
                     <Image
                         src={mecanique}
@@ -42,9 +42,9 @@ export default function page() {
             </AnimatedArticle>
 
             <AnimatedArticle>
-                <h2 className='underline underline-offset-4 decoration-red-500 text-2xl font-bold font-montserrat mb-4'>
+                <SectionTitle className='underline underline-offset-4 decoration-red-500'>
                     Qualité et Engagement.
-                </h2>
+                </SectionTitle>
                 <section className='flex flex-col gap-4 md:flex-row-reverse items-center md:items-stretch font-roboto'>
                     <Image
                         src={frein}
@@ -66,9 +66,9 @@ export default function page() {
             </AnimatedArticle>
 
             <AnimatedArticle>
-                <h2 className='underline underline-offset-4 decoration-red-500 text-2xl font-bold font-montserrat mb-4'>
+                <SectionTitle className='underline underline-offset-4 decoration-red-500'>
                     Service Personnalisé.
-                </h2>
+                </SectionTitle>
                 <section className='flex flex-col gap-4 md:flex-row items-center md:items-stretch font-roboto'>
                     <Image
                         src={moteur}
@@ -90,9 +90,9 @@ export default function page() {
             </AnimatedArticle>
 
             <AnimatedArticle>
-                <h2 className='underline underline-offset-4 decoration-red-500 text-2xl font-bold font-montserrat mb-4'>
+                <SectionTitle className='underline underline-offset-4 decoration-red-500'>
                     Nous Contacter
-                </h2>
+                </SectionTitle>
                 <section className='flex flex-col gap-4 md:flex-row-reverse items-center md:items-stretch font-roboto'>
                     <Image
                         src={imageSlider2}

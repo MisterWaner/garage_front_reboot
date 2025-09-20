@@ -16,11 +16,13 @@ export default function CarCard({ car }: { car: Car }) {
         <>
             <div className='overflow-hidden rounded-lg bg-slate-50 w-80 text-slate-950 mt-5 h-fit md:mt-0 shadow-md'>
                 <figure>
-                    <Image
+                    {/* <Image
                         src={`${car.images}`}
                         alt=''
+                        width={400}
+                        height={225}
                         className='aspect-video w-full'
-                    />
+                    /> */}
                 </figure>
                 <div className='p-6'>
                     <header className='mb-4'>

@@ -5,6 +5,7 @@ import carwash from '../assets/images/carwash.jpg';
 import route from '../assets/images/route.jpg';
 import ReviewSection from '@/components/Reviews/ReviewSection';
 import MainWrapper from '@/components/ui/MainWrapper';
+import SectionTitle from '@/components/ui/Headings/SectionTitle';
 import BlurIntro from '@/components/ui/BlurIntro';
 
 export default function Home() {
@@ -13,12 +14,12 @@ export default function Home() {
             <BlurIntro />
             <MainWrapper centered={false}>
                 <article id='about' className='mt-24'>
-                    <h2 className='text-2xl font-semibold font-montserrat mb-4'>
+                    <SectionTitle>
                         Découvrez notre{' '}
                         <span className='underline underline-offset-4 decoration-red-500'>
                             Univers.
                         </span>
-                    </h2>
+                    </SectionTitle>
 
                     <section className='flex flex-col gap-4 md:flex-row items-center md:items-stretch font-roboto'>
                         <Image
@@ -70,12 +71,12 @@ export default function Home() {
                     </section>
                 </article>
                 <article>
-                    <h2 className='text-2xl font-semibold font-montserrat mb-4'>
+                    <SectionTitle>
                         <span className='underline underline-offset-4 decoration-red-500'>
                             L&apos;Expertise
                         </span>{' '}
                         qui fait la différence.
-                    </h2>
+                    </SectionTitle>
                     <section className='flex flex-col gap-4 md:flex-row items-center md:items-stretch font-roboto'>
                         <Image
                             src={carwash}
@@ -119,13 +120,13 @@ export default function Home() {
                     </section>
                 </article>
                 <article>
-                    <h2 className='text-2xl font-semibold font-montserrat mb-4'>
+                    <SectionTitle>
                         Votre{' '}
                         <span className='underline underline-offset-4 decoration-red-500'>
                             Satisfaction
                         </span>
                         , notre Priorité.
-                    </h2>
+                    </SectionTitle>
                     <section className='font-roboto'>
                         <p className='text-lg'>
                             Chez Garage Vincent Parrot, votre satisfaction est
@@ -142,9 +143,9 @@ export default function Home() {
                     <ReviewSection />
                 </article>
                 <article>
-                    <h2 className='text-2xl font-semibold font-montserrat mb-4'>
-                        Contactez-nous
-                    </h2>
+                    <SectionTitle className='underline underline-offset-4 decoration-red-500'>
+                        Nous Contacter
+                    </SectionTitle>
                     <section className='font-roboto'>
                         <p className='text-lg'>
                             Que vous soyez un passionné de voitures classiques,

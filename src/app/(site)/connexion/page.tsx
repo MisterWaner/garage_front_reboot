@@ -1,5 +1,10 @@
-import React from 'react';
+import MainWrapper from "@/components/ui/MainWrapper";
+import PageTitle from "@/components/ui/Headings/PageTitle";
 
 export default function page() {
-    return <div>Connexion</div>;
+    return (
+        <MainWrapper>
+            <PageTitle>Connexion</PageTitle>
+        </MainWrapper>
+    );
 }

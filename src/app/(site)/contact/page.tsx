@@ -1,5 +1,11 @@
-import React from 'react';
+import PageTitle from "@/components/ui/Headings/PageTitle";
+import MainWrapper from "@/components/ui/MainWrapper";
+
 
 export default function page() {
-    return <div>Contact</div>;
+    return (
+        <MainWrapper>
+            <PageTitle>Contact</PageTitle>
+        </MainWrapper>
+    );
 }

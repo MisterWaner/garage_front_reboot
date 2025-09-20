@@ -1,15 +1,21 @@
-import MainWrapper from "@/components/ui/MainWrapper";
-import CarCard from "@/components/Cars/CarCard";
+import MainWrapper from '@/components/ui/MainWrapper';
+import PageTitle from '@/components/ui/Headings/PageTitle';
+import CarCard from '@/components/Cars/CarCard';
+import CarFilter from '@/components/Cars/CarFilter';
+import { fakedCars } from '@/lib/fakedata';
 
 export default function page() {
     return (
-        <MainWrapper centered={false}>
-            <h1 className='text-center text-2xl my-6 sm:text-3xl lg:text-5xl font-montserrat underline underline-offset-4 decoration-red-500'>
-                Nos Occasions
-            </h1>
-            <section className="flex flex-col gap-4 md:flex-row items-center md:items-stretch font-roboto">
-                <ul className="flex flex-wrap justify-center gap-6 w-full px-4">
-                    {/* TODO */}
+        <MainWrapper centered={true}>
+            <PageTitle>Nos Occasions</PageTitle>
+            <section className='md:flex gap-6 font-roboto'>
+                <CarFilter />
+                <ul className='flex flex-wrap justify-center gap-6 w-full px-4'>
+                    {fakedCars.map((car) => (
+                        <li key={car.immatriculation}>
+                            <CarCard car={car} />
+                        </li>
+                    ))}
                 </ul>
             </section>
         </MainWrapper>
